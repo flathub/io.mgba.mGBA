@@ -41,8 +41,8 @@
         "-nomake", "tests", "-system-harfbuzz", "-system-sqlite",
         "-accessibility", "-dbus-linked", "-fontconfig", "-glib", "-icu",
         "-openssl-linked", "-no-pch", "-no-rpath", "-no-separate-debug-info",
-        "-reduce-relocations", "-no-directfb", "-no-linuxfb", "-no-kms",
-        "-no-cups", "-system-proxies", "-archdatadir", "/app/lib/"
+        "-no-directfb", "-no-linuxfb", "-no-kms", "-no-cups", "-system-proxies",
+        "-archdatadir", "/app/lib/"
       ],
       "sources": [
         {
