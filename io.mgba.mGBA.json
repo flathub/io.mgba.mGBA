@@ -15,84 +15,19 @@
     "--socket=wayland",
     "--socket=x11"
   ],
+  "cleanup": [
+    "/lib/libQt5MultimediaWidgets.so*",
+    "/lib/libqgsttools_p.so*",
+    "/lib/libQt5Concurrent.so*",
+    "/lib/libQt5EglFSDeviceIntegration.so*",
+    "/lib/libQt5PrintSupport.so*",
+    "/lib/libQt5Sql.so*",
+    "/lib/libQt5Test.so*",
+    "/lib/libQt5Xml.so*"
+  ],
   "modules": [
-    {
-      "name": "qt5-qtbase",
-      "cleanup": [
-        "/bin",
-        "/doc",
-        "/include",
-        "/lib/*.a",
-        "/lib/*.la",
-        "/lib/*.prl",
-        "/lib/cmake",
-        "/lib/debug",
-        "/lib/mkspecs",
-        "/lib/pkgconfig",
-        "/lib/libQt5Concurrent.so*",
-        "/lib/libQt5EglFSDeviceIntegration.so*",
-        "/lib/libQt5PrintSupport.so*",
-        "/lib/libQt5Sql.so*",
-        "/lib/libQt5Test.so*",
-        "/lib/libQt5Xml.so*"
-      ],
-      "config-opts": [ "-confirm-license", "-opensource", "-debug", "-shared",
-        "-platform", "linux-g++", "-optimized-qmake", "-nomake", "examples",
-        "-nomake", "tests", "-system-harfbuzz", "-system-sqlite",
-        "-accessibility", "-dbus-linked", "-fontconfig", "-glib", "-icu",
-        "-openssl-linked", "-no-pch", "-no-rpath", "-no-separate-debug-info",
-        "-no-directfb", "-no-linuxfb", "-no-kms", "-no-cups", "-system-proxies",
-        "-archdatadir", "/app/lib/"
-      ],
-      "sources": [
-        {
-          "type": "git",
-          "url": "git://code.qt.io/qt/qtbase.git",
-          "branch": "v5.8.0"
-        },
-        {
-          "type": "shell",
-          "commands": [ "mv configure configure.qt" ]
-        },
-        {
-          "type": "script",
-          "commands": [
-            "processed=`sed -e 's/--/-/g ; s/=/ /g' <<< $@`",
-            "./configure.qt $processed"
-          ],
-          "dest-filename": "configure"
-        }
-      ]
-    },
-    {
-      "name": "qt5-qtmultimedia",
-      "cleanup": [
-        "/doc",
-        "/include",
-        "/lib/*.a",
-        "/lib/*.la",
-        "/lib/*.prl",
-        "/lib/cmake",
-        "/lib/debug",
-        "/lib/mkspecs",
-        "/lib/libQt5MultimediaWidgets.so*",
-        "/lib/libqgsttools_p.so*",
-        "/lib/pkgconfig",
-        "/lib/plugins"
-      ],
-      "sources": [
-        {
-          "type": "git",
-          "url": "git://code.qt.io/qt/qtmultimedia.git",
-          "branch": "v5.8.0"
-        },
-        {
-          "type": "script",
-          "commands": ["qmake"],
-          "dest-filename": "configure"
-        }
-      ]
-    },
+    "shared-modules/qt5/qt5-qtbase.json",
+    "shared-modules/qt5/qt5-qtmultimedia.json",
     {
       "name": "mgba",
       "buildsystem": "cmake",
