@@ -18,5 +18,8 @@
     <screenshot>https://raw.githubusercontent.com/flathub/io.mgba.mGBA/master/screenshots/2.png</screenshot>
     <screenshot>https://raw.githubusercontent.com/flathub/io.mgba.mGBA/master/screenshots/3.png</screenshot>
   </screenshots>
+  <releases>
+    <release version="0.6.1" date="2017-09-01"/>
+  </releases>
   <updatecontact>b@bpiotrowski.pl</updatecontact>
 </application>

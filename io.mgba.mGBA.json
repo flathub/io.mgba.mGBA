@@ -11,14 +11,16 @@
     "--device=dri",
     "--filesystem=home:ro",
     "--socket=pulseaudio",
-    "--socket=wayland",
-    "--socket=x11"
+    "--socket=x11",
+    "--env=QT_QPA_PLATFORM=flatpak",
+    "--env=QT_QPA_FLATPAK_PLATFORM=xcb"
   ],
   "modules": [
     {
       "name": "mgba",
-      "buildsystem": "cmake",
+      "buildsystem": "cmake-ninja",
       "config-opts": [
+        "-DCMAKE_BUILD_TYPE=Release",
         "-DCMAKE_INSTALL_LIBDIR=lib"
       ],
       "build-commands": [
