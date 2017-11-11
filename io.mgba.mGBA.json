@@ -14,8 +14,8 @@
     "--socket=x11",
     "--env=QT_QPA_PLATFORM=flatpak",
     "--env=QT_QPA_FLATPAK_PLATFORM=xcb",
-    /* SDL needs to be able to talk to the system bus */
-    "--system-talk-name=org.freedesktop.DBus"
+    /* SDL needs to be able to talk to UPower */
+    "--system-talk-name=org.freedesktop.UPower"
   ],
   "modules": [
     {
