@@ -8,8 +8,8 @@
   "rename-icon": "mgba",
   "rename-appdata-file": "mgba.appdata.xml",
   "finish-args": [
-    "--device=dri",
-    "--filesystem=home:ro",
+    "--device=all",
+    "--filesystem=host:ro",
     "--socket=pulseaudio",
     "--socket=x11",
     /* SDL needs to be able to talk to UPower */
