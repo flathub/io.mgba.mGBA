@@ -9,7 +9,7 @@
   "rename-appdata-file": "mgba.appdata.xml",
   "finish-args": [
     "--device=all",
-    "--filesystem=host:ro",
+    "--filesystem=host:rw",
     "--socket=pulseaudio",
     "--socket=x11",
     /* SDL needs to be able to talk to UPower */
