@@ -8,8 +8,8 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MPL-2.0</project_license>
   <description><p>mGBA is a new emulator for running Game Boy Advance games. It aims to befaster and more accurate than many existing Game Boy Advance emulators, aswell as adding features that other emulators lack.</p></description>
-  <description xml:lang="pt_BR"><p>O mGBA permite jogar jogos de Game Boy Advance no seu Computador.</p><description>
-  <description xml:lang="es"><p>mGBA le permite jugar juegos de Game Boy Advance en su ordenador.</p><description>
+  <description xml:lang="pt_BR"><p>O mGBA permite jogar jogos de Game Boy Advance no seu Computador.</p></description>
+  <description xml:lang="es"><p>mGBA le permite jugar juegos de Game Boy Advance en su ordenador.</p></description>
   <url type="homepage">https://mgba.io/</url>
   <screenshots>
     <screenshot type="default">https://raw.githubusercontent.com/flathub/io.mgba.mGBA/master/screenshots/1.png</screenshot>
