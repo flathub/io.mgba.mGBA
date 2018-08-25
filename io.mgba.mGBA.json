@@ -29,8 +29,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/mgba-emu/mgba/archive/0.6.2.tar.gz",
-          "sha256": "22429f2c94a43fc25c51a6f0d8b024ee62be4de8a74d579c8283c526434cea74"
+          "url": "https://github.com/mgba-emu/mgba/archive/0.6.3.tar.gz",
+          "sha256": "35c8906c01206adae714fee9c2bc39698c514a4adb32c9c4a5a3fa58b2d10f9a"
         },
         {
           "type": "file",

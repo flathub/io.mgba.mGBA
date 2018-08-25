@@ -19,7 +19,7 @@
     <screenshot>https://raw.githubusercontent.com/flathub/io.mgba.mGBA/master/screenshots/3.png</screenshot>
   </screenshots>
   <releases>
-    <release version="0.6.2" date="2018-04-04"/>
+    <release version="0.6.3" date="2018-08-25"/>
   </releases>
   <updatecontact>b@bpiotrowski.pl</updatecontact>
 </application>
