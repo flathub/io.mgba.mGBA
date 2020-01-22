@@ -2,7 +2,7 @@
   "app-id": "io.mgba.mGBA",
   "runtime": "org.kde.Platform",
   "sdk": "org.kde.Sdk",
-  "runtime-version": "5.12",
+  "runtime-version": "5.13",
   "command": "mgba-qt",
   "rename-desktop-file": "mgba-qt.desktop",
   "rename-icon": "mgba",
@@ -29,8 +29,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/mgba-emu/mgba/archive/0.7.3.tar.gz",
-          "sha256": "6d5e8ab6f87d3d9fa85af2543db838568dbdfcecd6797f8153f1b3a10b4a8bdd"
+          "url": "https://github.com/mgba-emu/mgba/archive/0.8.0.tar.gz",
+          "sha256": "77da9416cb60fed10a35feb5d9b5b951cd0187c00c367a1f4d60ffc1b659c6dd"
         },
         {
           "type": "file",
