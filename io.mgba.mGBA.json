@@ -12,6 +12,7 @@
     "--filesystem=host:rw",
     "--socket=pulseaudio",
     "--socket=x11",
+    "--share=network",
     /* SDL needs to be able to talk to UPower */
     "--system-talk-name=org.freedesktop.UPower"
   ],
