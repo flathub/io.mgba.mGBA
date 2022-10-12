@@ -4,8 +4,6 @@
   "sdk": "org.kde.Sdk",
   "runtime-version": "5.15-21.08",
   "command": "mgba-qt",
-  "rename-desktop-file": "mgba-qt.desktop",
-  "rename-icon": "mgba",
   "rename-appdata-file": "mgba.appdata.xml",
   "finish-args": [
     "--device=all",
@@ -19,6 +17,7 @@
     "--talk-name=org.freedesktop.ScreenSaver"
   ],
   "modules": [
+    "shared-modules/lua5.4/lua-5.4.json",
     {
       "name": "mgba",
       "buildsystem": "cmake-ninja",
@@ -32,8 +31,13 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/mgba-emu/mgba/archive/0.9.3.tar.gz",
-          "sha256": "692ff0ac50e18380df0ff3ee83071f9926715200d0dceedd9d16a028a59537a0"
+          "url": "https://github.com/mgba-emu/mgba/archive/0.10.0.tar.gz",
+          "sha256": "e2d66d9ce7c51b1ef3b339b04e871287bf166f6a1d7125ef112dbf53ab8bbd48",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 141675,
+            "url-template": "https://github.com/mgba-emu/mgba/archive/$version.tar.gz"
+          }
         },
         {
           "type": "file",
