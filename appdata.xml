@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application>
-  <id type="desktop">mgba-qt.desktop</id>
+  <id type="desktop">io.mgba.mGBA.desktop</id>
   <name>mGBA</name>
   <summary>Nintendo Game Boy Advance Emulator</summary>
   <metadata_license>CC0-1.0</metadata_license>
