@@ -23,7 +23,8 @@
       "buildsystem": "cmake-ninja",
       "config-opts": [
         "-DCMAKE_BUILD_TYPE=Release",
-        "-DCMAKE_INSTALL_LIBDIR=lib"
+        "-DCMAKE_INSTALL_LIBDIR=lib",
+        "-DUSE_EPOXY=OFF"
       ],
       "build-commands": [
         "install -Dm644 appdata.xml /app/share/appdata/mgba.appdata.xml"
