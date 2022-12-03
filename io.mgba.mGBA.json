@@ -9,7 +9,8 @@
     "--device=all",
     "--filesystem=host:rw",
     "--socket=pulseaudio",
-    "--socket=x11",
+    "--socket=fallback-x11",
+    "--socket=wayland",
     "--share=network",
     /* SDL needs to be able to talk to UPower */
     "--system-talk-name=org.freedesktop.UPower",
