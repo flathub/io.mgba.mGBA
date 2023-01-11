@@ -1,51 +1,49 @@
 {
-  "app-id": "io.mgba.mGBA",
-  "runtime": "org.kde.Platform",
-  "sdk": "org.kde.Sdk",
-  "runtime-version": "5.15-21.08",
-  "command": "mgba-qt",
-  "rename-appdata-file": "mgba.appdata.xml",
-  "finish-args": [
-    "--device=all",
-    "--filesystem=host:rw",
-    "--socket=pulseaudio",
-    "--socket=fallback-x11",
-    "--socket=wayland",
-    "--share=network",
-    /* SDL needs to be able to talk to UPower */
-    "--system-talk-name=org.freedesktop.UPower",
-    /* Allow SDL to inhibit the screensaver */
-    "--talk-name=org.freedesktop.ScreenSaver"
-  ],
-  "modules": [
-    "shared-modules/lua5.4/lua-5.4.json",
-    {
-      "name": "mgba",
-      "buildsystem": "cmake-ninja",
-      "config-opts": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DCMAKE_INSTALL_LIBDIR=lib",
-        "-DUSE_EPOXY=OFF"
-      ],
-      "build-commands": [
-        "install -Dm644 appdata.xml /app/share/appdata/mgba.appdata.xml"
-      ],
-      "sources": [
+    "app-id": "io.mgba.mGBA",
+    "runtime": "org.kde.Platform",
+    "sdk": "org.kde.Sdk",
+    "runtime-version": "5.15-21.08",
+    "command": "mgba-qt",
+    "rename-appdata-file": "mgba.appdata.xml",
+    "finish-args": [
+        "--device=all",
+        "--filesystem=host:rw",
+        "--socket=pulseaudio",
+        "--socket=fallback-x11",
+        "--socket=wayland",
+        "--share=network",
+        "--system-talk-name=org.freedesktop.UPower",
+        "--talk-name=org.freedesktop.ScreenSaver"
+    ],
+    "modules": [
+        "shared-modules/lua5.4/lua-5.4.json",
         {
-          "type": "archive",
-          "url": "https://github.com/mgba-emu/mgba/archive/0.10.0.tar.gz",
-          "sha256": "e2d66d9ce7c51b1ef3b339b04e871287bf166f6a1d7125ef112dbf53ab8bbd48",
-          "x-checker-data": {
-            "type": "anitya",
-            "project-id": 141675,
-            "url-template": "https://github.com/mgba-emu/mgba/archive/$version.tar.gz"
-          }
-        },
-        {
-          "type": "file",
-          "path": "appdata.xml"
+            "name": "mgba",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DCMAKE_INSTALL_LIBDIR=lib",
+                "-DUSE_EPOXY=OFF"
+            ],
+            "build-commands": [
+                "install -Dm644 appdata.xml /app/share/appdata/mgba.appdata.xml"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/mgba-emu/mgba/archive/0.10.1.tar.gz",
+                    "sha256": "5fc1d7ac139fe51ef71782d5de12d11246563cdebd685354b6188fdc82a84bdf",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 141675,
+                        "url-template": "https://github.com/mgba-emu/mgba/archive/$version.tar.gz"
+                    }
+                },
+                {
+                    "type": "file",
+                    "path": "appdata.xml"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
