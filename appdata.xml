@@ -18,6 +18,7 @@
     <screenshot type="default">https://raw.githubusercontent.com/flathub/io.mgba.mGBA/master/screenshots/1.png</screenshot>
     <screenshot>https://raw.githubusercontent.com/flathub/io.mgba.mGBA/master/screenshots/2.png</screenshot>
     <screenshot>https://raw.githubusercontent.com/flathub/io.mgba.mGBA/master/screenshots/3.png</screenshot>
+	<screenshot>https://raw.githubusercontent.com/flathub/io.mgba.mGBA/master/screenshots/4.png</screenshot>
   </screenshots>
   <releases>
     <release version="0.10.1" date="2023-01-11"/>
