@@ -4,7 +4,6 @@
     "sdk": "org.kde.Sdk",
     "runtime-version": "5.15-22.08",
     "command": "mgba-qt",
-    "rename-appdata-file": "mgba.appdata.xml",
     "finish-args": [
         "--device=all",
         "--filesystem=host:rw",
@@ -26,7 +25,7 @@
                 "-DUSE_EPOXY=OFF"
             ],
             "build-commands": [
-                "install -Dm644 appdata.xml /app/share/appdata/mgba.appdata.xml"
+                "install -Dm644 io.mgba.mGBA.appdata.xml /app/share/appdata/io.mgba.mGBA.appdata.xml"
             ],
             "sources": [
                 {
@@ -41,7 +40,7 @@
                 },
                 {
                     "type": "file",
-                    "path": "appdata.xml"
+                    "path": "io.mgba.mGBA.appdata.xml"
                 }
             ]
         }
