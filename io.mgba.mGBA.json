@@ -4,6 +4,11 @@
     "sdk": "org.kde.Sdk",
     "runtime-version": "5.15-23.08",
     "command": "mgba-qt",
+    "cleanup": [
+        "/include",
+        "/share/doc",
+        "/share/man"
+    ],
     "finish-args": [
         "--device=all",
         "--filesystem=host:rw",
