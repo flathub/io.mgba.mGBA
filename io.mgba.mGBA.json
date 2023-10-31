@@ -5,6 +5,7 @@
     "runtime-version": "5.15-23.08",
     "command": "mgba-qt",
     "cleanup": [
+        "/bin/mgba",
         "/include",
         "/share/doc",
         "/share/man"
@@ -27,7 +28,6 @@
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=Release",
                 "-DCMAKE_INSTALL_LIBDIR=lib",
-                "-DBUILD_SDL=OFF",
                 "-DUSE_EPOXY=OFF"
             ],
             "build-commands": [
