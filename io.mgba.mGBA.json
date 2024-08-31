@@ -35,7 +35,7 @@
                 "-DUSE_EPOXY=OFF"
             ],
             "build-commands": [
-                "install -Dm644 io.mgba.mGBA.appdata.xml /app/share/appdata/io.mgba.mGBA.appdata.xml"
+                "install -Dm644 io.mgba.mGBA.metainfo.xml /app/share/metainfo/io.mgba.mGBA.metainfo.xml"
             ],
             "sources": [
                 {
@@ -50,7 +50,7 @@
                 },
                 {
                     "type": "file",
-                    "path": "io.mgba.mGBA.appdata.xml"
+                    "path": "io.mgba.mGBA.metainfo.xml"
                 }
             ]
         }

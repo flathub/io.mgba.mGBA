@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.mgba.mGBA</id>
+  <name>mGBA</name>
+  <summary>Nintendo Game Boy Advance Emulator</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MPL-2.0</project_license>
+  <content_rating type="oars-1.1"/>
+  <description>
+    <p>
+      mGBA is an emulator for running Game Boy Advance games. It aims to be
+      faster and more accurate than many existing Game Boy Advance emulators, as
+      well as adding features that other emulators lack. It also supports Game
+      Boy and Game Boy Color games.
+    </p>
+  </description>
+  <developer id="com.endrift">
+    <name>Vicki Pfau (endrift)</name>
+  </developer>
+  <launchable type="desktop-id">io.mgba.mGBA.desktop</launchable>
+  <url type="homepage">https://mgba.io/</url>
+  <url type="bugtracker">https://github.com/mgba-emu/mgba/issues</url>
+  <url type="donation">https://mgba.io/donate.html</url>
+  <url type="faq">https://mgba.io/faq.html</url>
+  <url type="translate">https://hosted.weblate.org/engage/mgba/</url>
+  <url type="vcs-browser">https://github.com/mgba-emu/mgba</url>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/flathub/io.mgba.mGBA/master/screenshots/1.png</image>
+      <caption>mGBA main window</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/flathub/io.mgba.mGBA/master/screenshots/2.png</image>
+      <caption>Game window</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/flathub/io.mgba.mGBA/master/screenshots/3.png</image>
+      <caption>Settings window</caption>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="0.10.3" date="2024-01-08"/>
+    <release version="0.10.2" date="2023-04-24"/>
+    <release version="0.10.1" date="2023-01-11"/>
+    <release version="0.10.0" date="2022-10-11"/>
+  </releases>
+</component>
