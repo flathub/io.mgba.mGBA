@@ -16,6 +16,7 @@
         "--socket=pulseaudio",
         "--socket=fallback-x11",
         "--socket=wayland",
+        "--share=ipc",
         "--share=network",
         "--system-talk-name=org.freedesktop.UPower",
         "--talk-name=org.freedesktop.ScreenSaver"
