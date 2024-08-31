@@ -26,10 +26,12 @@
             "name": "mgba",
             "buildsystem": "cmake-ninja",
             "config-opts": [
+                "-DCMAKE_AR=/usr/bin/gcc-ar",
+                "-DCMAKE_NM=/usr/bin/gcc-nm",
+                "-DCMAKE_RANLIB=/usr/bin/gcc-ranlib",
                 "-DCMAKE_BUILD_TYPE=Release",
                 "-DCMAKE_INSTALL_LIBDIR=lib",
-                "-DUSE_EPOXY=OFF",
-                "-DBUILD_LTO=OFF"
+                "-DUSE_EPOXY=OFF"
             ],
             "build-commands": [
                 "install -Dm644 io.mgba.mGBA.appdata.xml /app/share/appdata/io.mgba.mGBA.appdata.xml"
