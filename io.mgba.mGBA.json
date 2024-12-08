@@ -2,7 +2,7 @@
     "app-id": "io.mgba.mGBA",
     "runtime": "org.kde.Platform",
     "sdk": "org.kde.Sdk",
-    "runtime-version": "5.15-23.08",
+    "runtime-version": "5.15-24.08",
     "command": "mgba-qt",
     "cleanup": [
         "/bin/mgba",
@@ -31,7 +31,6 @@
                 "-DCMAKE_NM=/usr/bin/gcc-nm",
                 "-DCMAKE_RANLIB=/usr/bin/gcc-ranlib",
                 "-DCMAKE_BUILD_TYPE=Release",
-                "-DCMAKE_INSTALL_LIBDIR=lib",
                 "-DUSE_EPOXY=OFF"
             ],
             "build-commands": [
