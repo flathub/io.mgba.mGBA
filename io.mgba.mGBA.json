@@ -21,6 +21,17 @@
         "--system-talk-name=org.freedesktop.UPower",
         "--talk-name=org.freedesktop.ScreenSaver"
     ],
+    "add-extensions": {
+        "org.freedesktop.Platform.ffmpeg-full": {
+            "directory": "lib/ffmpeg",
+            "version": "24.08",
+            "add-ld-path": ".",
+            "no-autodownload": false
+        }
+    },
+    "cleanup-commands": [
+        "mkdir -p /app/lib/ffmpeg"
+    ],
     "modules": [
         "shared-modules/lua5.4/lua-5.4.json",
         {
