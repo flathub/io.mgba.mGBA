@@ -18,7 +18,7 @@
     <name>Vicki Pfau (endrift)</name>
   </developer>
   <launchable type="desktop-id">io.mgba.mGBA.desktop</launchable>
-  <url type="homepage">https://mgba.io/</url>
+  <url type="homepage">https://mgba.io</url>
   <url type="bugtracker">https://github.com/mgba-emu/mgba/issues</url>
   <url type="donation">https://mgba.io/donate.html</url>
   <url type="faq">https://mgba.io/faq.html</url>
@@ -39,12 +39,8 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="0.10.5" date="2025-03-09">
-      <description></description>
-    </release>
-    <release version="0.10.4" date="2024-12-08">
-      <description/>
-    </release>
+    <release version="0.10.5" date="2025-03-09"/>
+    <release version="0.10.4" date="2024-12-08"/>
     <release version="0.10.3" date="2024-01-08"/>
     <release version="0.10.2" date="2023-04-24"/>
     <release version="0.10.1" date="2023-01-11"/>
