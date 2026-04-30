@@ -30,9 +30,9 @@
                 "-DCMAKE_AR=/usr/bin/gcc-ar",
                 "-DCMAKE_NM=/usr/bin/gcc-nm",
                 "-DCMAKE_RANLIB=/usr/bin/gcc-ranlib",
-                "-DCMAKE_BUILD_TYPE=Release",
-                "-DUSE_EPOXY=OFF",
-                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+                "-DCMAKE_BUILD_TYPE=None",
+                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
+                "-DUSE_EPOXY=OFF"
             ],
             "build-commands": [
                 "install -Dm644 io.mgba.mGBA.metainfo.xml -t /app/share/metainfo/"
